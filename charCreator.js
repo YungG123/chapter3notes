@@ -1,8 +1,9 @@
 const readline = require('readline-sync');
 
 let diceRolled = [];
+let eyeColer = ['blue','Green','hazel','black']
 let character1 = {
-    //empty for now
+    //empty for start
 }
 
 createChar(diceRolled)
@@ -12,11 +13,12 @@ function rolld6(){
 }
 
 function rollDice(amount, list){
-    for(let i=0; i<amount; i++){
-        let roll= rolld6();
+    for(let i=0; i<amount; i++) {
+        let roll = rolld6();
+    }
         console.log(`You rolled a ${roll}!`)
         list.push(roll)
-    }
+
 }
 
 function sum(list){
@@ -25,7 +27,7 @@ function sum(list){
     }
     sum += list[i];
 }
-return sum;
+return sum; 
 
 }
 
